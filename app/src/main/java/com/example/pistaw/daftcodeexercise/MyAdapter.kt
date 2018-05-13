@@ -11,7 +11,6 @@ class MyAdapter(private val bar: ArrayList<BarData>, private val clickListener: 
         RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
 
-
     // Provide a reference to the views for each data item
     class ViewHolder(private val mItemView: View) : RecyclerView.ViewHolder(mItemView) {
 

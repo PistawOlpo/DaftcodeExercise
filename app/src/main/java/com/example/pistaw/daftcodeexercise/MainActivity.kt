@@ -51,14 +51,14 @@ class MainActivity : Activity() {
         override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
             val previousBar: BarData
 
-                if (mBarItemClicked.id == 0) {
-                    previousBar = barList[barList.lastIndex]
-                } else {
-                    previousBar = barList[mBarItemClicked.id - 1]
-                }
+            if (mBarItemClicked.id == 0) {
+                previousBar = barList[barList.lastIndex]
+            } else {
+                previousBar = barList[mBarItemClicked.id - 1]
+            }
 
-                mBarItemClicked.counter += previousBar.counter
-                viewAdapter.notifyDataSetChanged()
+            mBarItemClicked.counter += previousBar.counter
+            viewAdapter.notifyDataSetChanged()
 
 
             Log.d(DEBUG_TAG, "on Stingle Tap " + e.toString())
